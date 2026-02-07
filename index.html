@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    pad: 0;
+}
+.main{
+    width: 100%;
+    background: rgba(27, 70, 136, 0.795);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: tomato;
+    font-size: 40px;
+    font-family: calibri;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+.MENU{
+    width: 100PX;
+    float: left;
+    height: 10px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li {
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 25px;
+    font-size: 16px;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    cursor: pointer;
+     transition: 0.4s ease-in-out;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+ul li:hover{
+    color: orange;
+    font-style: italic;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: rgba(27, 70, 136, 0.795);
+  margin-top: 30px;
+  width: 200px;
+  height: 400px;
+  border-radius: 20px;
+  text-align: center;  
+}
+.dropdown-content input{
+
+ margin: 10px;
+ background: transparent;
+ border-bottom: 1px solid tomato;
+ text-decoration: none;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ text-align: center;
+ color: white;
+}
+.dropdown-content button{
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    background: tomato;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    border: none;
+}
+.dropdown-content a{
+    color: tomato;
+    text-decoration: none;
+}
+.dropdown-content i{
+    margin-top: 20px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    
+}
+.srch{
+    font-family: arial;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid tomato;
+    margin-top: 13px;
+    color: antiquewhite;
+    font-size: 15px;
+    float: left;
+    padding: 10px;
+    margin-left: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: tomato;
+    border: 2px solid tomato;
+    margin-top: 13px;
+    color: antiquewhite;
+    font-size: 16px;
+    
+    border-radius: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin-top: 200px;
+    color: antiquewhite;
+    position: relative;
+    margin-left: 150px;
+    padding-left: 150px;
+    
+}
+
+.content .paragraph{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: arial;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: tomato;
+    border: none;
+    margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 20px;
+   font-size: 18px;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: .4s ease;
+}
+.content .cn a{
+    text-decoration: none;
+    color: rgb(248, 247, 247);
+    transition: 0.3s ease;
+}
+.cn:hover{
+    background: rgb(44, 5, 5);
+    color: rgb(22, 2, 41);
+}
+.content span{
+    color: tomato;
+    font-size: 60px;
+}
+.img{
+     width: 4%;
+    height: 480px;
+    position: absolute;
+    top: 10px;
+    left: 600px;
+    border-radius: 50px;
+    padding: 25px;
+    border-radius: 100px;
+}
+img .img-box{
+     width: 400px;
+    height: 480px;
+    position: absolute;
+    top: 10px;
+    left: 600px;
+    border-radius: 100px;
+    padding: 25px;
+}
+.img .img-box img{
+    width: 400px;
+    height: 480px;
+    position: absolute;
+    top: 10px;
+    left: 600px;
+    border-radius: 100px;
+    padding: 25px;
+    transition: .5s ease;
+
+}
+.img img:hover{
+transform: translate(5%);
+}
+
+
+</style>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">PortFolio.</h2>
+               
+            </div>
+             <div class="menu">
+                    <ul>
+                        <li><a href="index.html"></a>HOME</li>
+                        <li><a href=""></a>SKILLS</li>
+                        <li><a href=""></a>ABOUT</li>
+                        <li><a href=""></a>PROJECTS</li>
+                        <li><a href=""></a>CONTACT </li>
+                        <li class="dropdown"><a href=""></a>LOGIN 
+                        <div class="dropdown-content">
+                            <h2>LOGIN HERE </h2>
+                            <input type="text" placeholder="Enter Your Email">
+                            <input type="password" placeholder="Enter Paasword">
+                            <button>Login</button>
+                            <p>Don't have account? <br> <a href="">Sign Up</a> here</p>
+                            <p class="liw"> Login with</p>
+
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-google"></i>
+
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+            <div class="search">
+                    <input class="srch" type="search" name="" placeholder="Type to search">
+                    <a href=""><button class="btn">Search</button></a>
+                </div>
+        </div>
+         <div class="content">
+                <h1>Web Design & <br><span>Development</span> <br> Course</h1>
+                <p class="paragraph">Platform where yopu can unleash your potential by gainig <br> expertise in in the world of web development. <br> 
+                Here you can be a proffesional frontend and backend web <br> developer in the short term of time. </p>
+              <button class="cn"><a href="tasklogin.html">JOIN NOW </a></button>
+              <div class="img">
+                <div class="img-box">
+                    <img src="shp.jpg" alt="shp">
+                </div>
+            
+                    
+                    
+            </div>
+    </div>
+   
+</body>
+</html>
